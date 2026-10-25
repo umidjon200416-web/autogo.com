@@ -1,15 +1,12 @@
-Prava tayyorgarlik — BETA APK (kompyutersiz, GitHub orqali)
+BETA APK — PAPKASIZ (flat) variant
 
-1. github.com da bepul hisob oching va yangi repository yarating (masalan: prava-beta).
-2. "Add file > Upload files" orqali shu papka ICHIDAGI hamma narsani yuklang
-   (settings.gradle fayli repository ildizida turishi kerak).
-   Agar ".github" papkasi yuklanmasa: "Add file > Create new file", nomiga
-   .github/workflows/build-apk.yml yozing va build-apk.yml faylining matnini joylang.
-3. Repository > Actions > "Build APK" > "Run workflow".
-4. 3-5 daqiqadan keyin tugagan ishni oching, pastdagi "Artifacts" bo‘limidan
-   "prava-beta-apk" ni yuklab oling (zip ichida app-debug.apk).
-5. APK ni telefoningizga o‘tkazing va oching. Android "noma’lum manbadan o‘rnatish"
-   ruxsatini so‘raydi — ruxsat bering.
-
-Eslatma: bu sinov (debug) versiya, Play Market uchun emas.
-Xato chiqsa, Actions’dagi xato matnini menga yuboring.
+1. Bu zip'ni 7-Zip bilan papkaga to‘liq chiqarib oling (Извлечь).
+2. GitHub'da YANGI repository yarating (masalan: prava-beta).
+3. Chiqarilgan papkadagi hamma fayllarni (build.yml dan tashqari ham, hammasini) Ctrl+A bilan belgilab,
+   "uploading an existing file" sahifasiga sudrang. Papka kerak emas — hamma fayl bitta joyda turadi.
+   Fayl nomlari aynan shunday bo‘lishi kerak: settings.gradle, build.gradle, app-build.gradle, gradle.properties,
+   AndroidManifest.xml, MainActivity.java, index.html, ic_launcher.png, build.yml
+4. Commit changes.
+5. Add file > Create new file: nomiga  .github/workflows/build.yml  yozing (slash papka yaratadi),
+   ichiga build.yml faylining matnini joylang. Commit.
+6. Actions > Build APK > Run workflow. 3-5 daqiqadan keyin Artifacts > prava-beta-apk.
